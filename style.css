@@ -98,7 +98,6 @@ body {
 }
 .body-card {
   margin: 160px;
-  align-items: center;
 }
 .buisnessCard {
   display: flex;
@@ -106,13 +105,5 @@ body {
   border: solid white;
   padding: 20px;
   border-radius: 15px;
-  margin: 150px;
   justify-content: space-around;
-}
-.cardText {
-  justify-content: space-around;
-}
-.javaScript {
-  border-radius: 10%;
-  text-align: center;
 }
