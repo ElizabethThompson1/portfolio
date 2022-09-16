@@ -3,26 +3,87 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <title>Contact Me</title>
 </head>
 
 <body>
-    <div class="nav">
-        <div class="topnav">
-            <a class="active" href="home.html">Home</a>
-            <a href="code.html">My Code</a>
-            <a href="uxDesign.html">UX portfolio</a>
-            <a href="https://github.com/ElizabethThompson1">Github</a>
-        </div>
-    </div>
-    <div class="body-card">
-        <div class="buisnessCard">
-            <img class="javaScript" src="images/javascript code.jpg" alt="javascript code">
-            <div class="cardText">
-                <h3>Elizabeth Thompson</h3>
-                <p>Full Stack Developer , UX Designer</p>
-                <P>Email: Thompson21@YAHOO.COM</p>
+    <div class="contact">
+        <header>
+            <div class="nav">
+                <div class="topnav">
+                    <a class="active" href="home.html">Home</a>
+                    <a href="code.html">My Code</a>
+                    <a href="uxDesign.html">UX portfolio</a>
+                    <a href="https://github.com/ElizabethThompson1">Github</a>
+                    <a href="Contact.html">Contact Me</a>
+                    <h1></h1>
+                </div>
             </div>
-        </div>
+        </header>
+        <section>
+            <div class="section">
+                <div class="container">
+                    <div class="row full-height justify-content-center">
+                        <div class="col-12 text-center align-self-center py-5">
+                            <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                                <h6 class="options"><span>Email </span><span>Contact Info</span></h6>
+                                <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+                                <label for="reg-log"></label>
+                                <div style="text-align: center;" class="card-3d-wrap mx-auto">
+                                    <div class="card-3d-wrapper">
+                                        <div class="card-front">
+                                            <div class="center-wrap">
+                                                <div class="section text-center">
+                                                    <form target="_blank"
+                                                        action="https://formsubmit.co/thompsondeveloper@yahoo.com"
+                                                        method="POST">
+                                                        <div class="form-group">
+                                                            <div class="form-row">
+                                                                <div class="col">
+                                                                    <input type="text" name="name" class="form-control"
+                                                                        placeholder="Full Name" required>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <input type="email" name="email"
+                                                                        class="form-control" placeholder="Email Address"
+                                                                        required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <textarea placeholder="Your Message" class="form-control"
+                                                                name="message" rows="10" required></textarea>
+                                                        </div>
+                                                        <button id="btn" type="submit"
+                                                            class="btn btn-lg btn-dark btn-block">Send Email</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-back">
+                                            <div class="center-wrap">
+                                                <div class="section text-center">
+                                                    <h4 class="mb-4 pb-3">Contact Info</h4>
+                                                    <div>
+                                                        <a
+                                                            href="https://www.linkedin.com/in/elizabeth-ann-thompson/">Linkedin</a>
+                                                        <p>Email: Thompsondeveloper@yahoo.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <h3>Thompsondeveloper@yahoo.com</h3>
+        </footer>
     </div>
 
 </body>
