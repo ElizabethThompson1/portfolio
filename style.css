@@ -43,6 +43,18 @@ footer h3 {
   padding: 9px;
 }
 
+@media (max-width: 700px) {
+  .topnav {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .topnav a {
+    font-size: 2rem;
+  }
+}
+
 /* Home Page -left*/
 
 .home section {
@@ -98,6 +110,40 @@ footer h3 {
   font-size: 0.7em;
   display: flex;
   color: rgb(11, 11, 35);
+}
+.content h1 {
+  margin-top: 6%;
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .home section {
+    flex-direction: column;
+    height: 100vmax;
+  }
+  .right-info .content {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .right-info {
+    width: 100%;
+  }
+  .right-info img {
+    height: 300px;
+  }
+  .left-info {
+    margin-top: 27%;
+  }
+  .left-info {
+    font-size: 30px;
+    width: fit-content;
+    align-self: center;
+  }
+  .left-info a {
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
 }
 /* code */
 body .contact {
