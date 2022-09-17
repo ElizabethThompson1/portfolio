@@ -4,21 +4,37 @@ body {
 }
 
 /* Nav and Footer*/
-
+.topnav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: rgb(11, 11, 35);
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px; /* Height of the footer */
+}
+.topnav a {
+  margin-right: 10px;
+}
+.topnav a:hover {
+  background-color: rgb(54, 54, 88);
+  border-radius: 5px;
+  color: aliceblue;
+}
 .nav,
 footer {
-  background-color: rgb(11, 11, 35);
-  height: 48px;
-  margin: 0;
+  background: rgb(11, 11, 35);
 }
 footer h3 {
   text-align: center;
   margin: 0;
 }
-header a:hover {
-  background-color: rgb(24, 24, 54);
-}
-
 header a,
 footer h3 {
   text-decoration: none;
@@ -26,28 +42,17 @@ footer h3 {
   font-size: 20px;
   padding: 9px;
 }
-.topnav {
-  padding: 10px;
-}
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 4px;
-  margin: 0;
-}
-footer h3 {
-  margin: 0;
-}
+
 /* Home Page -left*/
 
 .home section {
-  height: 93vh;
+  background-color: rgb(24, 24, 54);
+  height: fit-content;
   width: fit-content;
   display: flex;
-  margin: 0;
 }
 .left-info {
+  height: 100hv;
   margin: 0;
   width: 30%;
   background-color: rgb(24, 24, 54);
@@ -58,7 +63,7 @@ footer h3 {
 }
 .left-info img {
   margin: 20px 70px;
-  margin-top: 200px;
+  margin-top: 30%;
   height: 200px;
   border-radius: 50%;
 }
@@ -70,12 +75,17 @@ footer h3 {
 }
 .left-info a:hover {
   color: rgb(100, 94, 94);
+  font-size: 20px;
 }
 /* Home Body right*/
 .right-info {
+  height: 100vh;
   margin: 0;
   width: 70%;
   background-color: rgb(204, 200, 200);
+}
+.right-info h2 {
+  margin: 10% 0;
 }
 .right-info img {
   margin: 7% 20px;
@@ -90,6 +100,9 @@ footer h3 {
   color: rgb(11, 11, 35);
 }
 /* code */
+body .contact {
+  background-color: whitesmoke;
+}
 center {
   align-items: center;
 }
@@ -97,24 +110,24 @@ section .code {
   height: 100vh;
 }
 .card-groups {
-  background-color: rgb(162, 157, 157);
-  padding: 30px;
-  border-radius: 5px;
-  margin-top: 5%;
   width: fit-content;
   display: flex;
   flex-direction: row;
 }
 .card {
-  margin: 20px 30px;
+  background-color: rgb(162, 157, 157);
+  padding: 20px;
+  margin: 10% 30px;
+  border-radius: 5px;
 }
 .card img {
   border-radius: 4px;
   width: 350px;
   height: 200px;
+  margin-bottom: 0%;
 }
 .code h1 {
-  margin: 3px 0;
+  margin-top: 4%;
   color: rgb(24, 24, 54);
   font-size: 30px;
   text-align: center;
@@ -131,12 +144,13 @@ section .code {
   text-align: center;
 }
 .iframe {
-  margin: 5px;
+  margin: 1% 0;
+  margin-bottom: 4%;
 }
 .ux {
   font-size: 50px;
   text-align: center;
-  margin: 10px;
+  margin-top: 3%;
   color: rgb(24, 24, 54);
 }
 section .uxDesign {
@@ -149,11 +163,11 @@ textarea {
   opacity: 60%;
   color: rgb(24, 24, 54);
   font-size: 20px;
-  height: 50px;
-  width: 600px;
+  height: 2em;
+  width: 30em;
 }
 textarea {
-  height: 300px;
+  height: 20rem;
 }
 form {
   margin-top: 4%;
@@ -180,8 +194,6 @@ button {
 button:hover {
   background-image: linear-gradient(130deg, #3134de, #4c7ecd 40%, #e3e5ef);
 }
-
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
 
 h6 span {
   padding: 0 20px;
@@ -240,11 +252,11 @@ h6 span {
 .card-3d-wrap {
   width: 800px;
   max-width: 100%;
-  height: 600px;
+  height: 36rem;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   perspective: 800px;
-  margin-top: 60px;
+  margin-top: 10%;
 }
 .card-3d-wrapper {
   width: 100%;
@@ -293,10 +305,26 @@ h6 span {
   display: block;
 }
 h6.options {
+  padding-top: 40px;
+  margin-top: 4%;
   text-align: center;
   font-size: 12px;
 }
 .section.pb-5.pt-5.pt-sm-2.text-center {
   width: fit-content;
+}
+.backcard-content {
   margin-left: 30%;
+  font-size: 30px;
+  width: fit-content;
+  color: aliceblue;
+}
+
+.backcard-content a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.backcard-content a:hover {
+  color: #4c7ecd;
+  font-size: 40px;
 }
