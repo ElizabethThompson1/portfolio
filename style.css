@@ -411,9 +411,6 @@ h6.options {
 
 @media (max-width: 765px) {
   .section.pb-5.pt-5.pt-sm-2.text-center {
-    display: block;
-  }
-  .section.pb-5.pt-5.pt-sm-2.text-center {
     width: 100%;
   }
   .card-3d-wrap {
@@ -425,16 +422,20 @@ h6.options {
     width: 100%;
     position: bottom;
   }
-  .backcard-content {
+  .card-back {
     position: bottom;
+    text-align: center;
     width: 100%;
-    font-size: 20px;
+    font-size: 10px;
     margin: 0;
     padding: 0;
   }
-  form {
-    position: bottom;
+  .center-wrap {
+    width: 90%;
+    margin: 0;
+    padding: 0;
   }
+
   .space {
     margin-top: 10rem;
   }
