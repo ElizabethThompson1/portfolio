@@ -77,13 +77,16 @@ footer h3 {
   margin: 0;
   width: 30%;
   background-color: rgb(24, 24, 54);
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
+  background-position: bottom center;
   color: whitesmoke;
   text-align: center;
   line-height: 40px;
   font-size: 20px;
 }
 .left-info img {
-  margin: 20px 70px;
+  margin: 40px 70px;
+  margin-top: 30%;
   height: 200px;
   border-radius: 50%;
 }
@@ -162,7 +165,10 @@ section .code {
   display: flex;
 }
 .card {
-  background-color: rgb(162, 157, 157);
+  background-color: rgb(24, 24, 54);
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
   padding: 20px;
   margin: 10% 30px;
   border-radius: 5px;
@@ -247,7 +253,6 @@ textarea {
 form {
   margin-top: 4%;
   margin-left: 10%;
-  align-items: center;
 }
 .message h2 {
   color: rgb(24, 24, 54);
@@ -403,48 +408,35 @@ h6.options {
   color: #4c7ecd;
   font-size: 40px;
 }
+.small-form {
+  display: none;
+}
 @media (max-width: 765px) {
-  h6.options {
-    margin-top: 50%;
+  .section.pb-5.pt-5.pt-sm-2.text-center {
+    display: none;
   }
-  .card-3d-wrap {
-    width: 100%;
-    height: 30rem;
+  .small-form {
+    background-color: rgb(24, 24, 54);
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    display: block;
+  }
+  .space {
+    margin-top: 13rem;
   }
   form {
-    width: 100%;
+    width: 80%;
   }
-  .backcard-content {
-    width: 100%;
-    margin: 0;
-    font-size: 1em;
+  h6 {
+    color: white;
+    font-size: 30px;
   }
   input,
   textarea {
-    height: 2em;
+    border-radius: 5px;
     width: 100%;
     margin: 0;
     padding: 0;
-  }
-  textarea {
-    height: 10rem;
-  }
-  button {
-    margin: 0;
-  }
-  .card-front,
-  .card-back {
-    margin: 0;
-    padding: 0;
-    align-content: center;
-    width: 100%;
-  }
-  .section.pb-5.pt-5.pt-sm-2.text-center {
-    width: 100%;
-  }
-  .nav {
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%;
   }
 }
