@@ -408,9 +408,7 @@ h6.options {
   color: #4c7ecd;
   font-size: 40px;
 }
-.small-form {
-  display: none;
-}
+
 @media (max-width: 765px) {
   .section.pb-5.pt-5.pt-sm-2.text-center {
     display: block;
@@ -423,24 +421,19 @@ h6.options {
     height: 35rem;
     margin: 20% 0;
   }
+  .card-front {
+    width: 100%;
+    position: fixed;
+  }
   .backcard-content {
+    position: fixed;
     width: 100%;
     font-size: 20px;
     margin: 0;
     padding: 0;
   }
-  .small-form {
-    background-color: rgb(24, 24, 54);
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    display: none;
-  }
   .space {
-    margin-top: 13rem;
-  }
-  form {
-    width: 100%;
+    margin-top: 10rem;
   }
 
   input,
