@@ -1,16 +1,21 @@
 body {
+  background-color: rgb(204, 200, 200);
   position: relative;
   margin: 0;
+  height: 100%;
 }
 
 /* Nav and Footer*/
+.nav {
+  background-color: rgb(11, 11, 35);
+  width: 100%;
+}
 .topnav {
+  width: 100%;
   display: flex;
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
-  padding: 10px;
   background-color: rgb(11, 11, 35);
 }
 footer {
@@ -43,28 +48,32 @@ footer h3 {
   padding: 9px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 675px) {
+  .nav {
+    width: 100%;
+    height: fit-content;
+  }
   .topnav {
     flex-direction: column;
     text-align: center;
     margin-bottom: 0;
     padding: 0;
+    height: fit-content;
   }
   .topnav a {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
 
 /* Home Page -left*/
 
 .home section {
-  background-color: rgb(24, 24, 54);
-  height: fit-content;
+  height: 100%;
   width: fit-content;
   display: flex;
 }
 .left-info {
-  height: 100hv;
+  margin-top: 40%;
   margin: 0;
   width: 30%;
   background-color: rgb(24, 24, 54);
@@ -75,7 +84,6 @@ footer h3 {
 }
 .left-info img {
   margin: 20px 70px;
-  margin-top: 30%;
   height: 200px;
   border-radius: 50%;
 }
@@ -89,12 +97,19 @@ footer h3 {
   color: rgb(100, 94, 94);
   font-size: 20px;
 }
+@media (max-width: 765px) {
+  .left-info {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  .left-info img {
+    margin-top: 80%;
+  }
+}
 /* Home Body right*/
 .right-info {
-  height: 100vh;
   margin: 0;
   width: 70%;
-  background-color: rgb(204, 200, 200);
 }
 .right-info h2 {
   margin: 10% 0;
@@ -102,9 +117,9 @@ footer h3 {
 .right-info img {
   margin: 7% 20px;
   height: 200px;
+  border-radius: 3px;
 }
 .right-info .content {
-  background-color: rgb(162, 157, 157);
   border-radius: 5px;
   margin: 8% 20px;
   font-size: 0.7em;
@@ -116,39 +131,26 @@ footer h3 {
   font-size: 20px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 765px) {
   .home section {
+    text-align: center;
     flex-direction: column;
-    height: 100vmax;
-  }
-  .right-info .content {
-    flex-direction: column;
-    height: 100vh;
+    height: max-content;
   }
   .right-info {
     width: 100%;
+    font-size: 1em;
   }
-  .right-info img {
-    height: 300px;
+  .contact h1 {
+    font-size: 0.2em;
+    height: fit-content;
   }
-  .left-info {
-    margin-top: 27%;
-  }
-  .left-info {
-    font-size: 30px;
-    width: fit-content;
-    align-self: center;
-  }
-  .left-info a {
-    font-size: 20px;
-    padding: 20px;
-    margin-bottom: 20px;
+  .right-info .content {
+    flex-direction: column;
   }
 }
 /* code */
-body .contact {
-  background-color: whitesmoke;
-}
+
 center {
   align-items: center;
 }
@@ -158,7 +160,6 @@ section .code {
 .card-groups {
   width: fit-content;
   display: flex;
-  flex-direction: row;
 }
 .card {
   background-color: rgb(162, 157, 157);
@@ -182,6 +183,27 @@ section .code {
   color: rgb(24, 24, 54);
   font-size: 30px;
 }
+
+@media (max-width: 765px) {
+  .card-groups {
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+  }
+  .card img {
+    width: 20em;
+    margin: 0;
+  }
+  .card {
+    width: 100%;
+    padding: 1% 0;
+    align-content: center;
+    margin: 10% 0;
+  }
+  .code h1 {
+    margin-top: 65%;
+  }
+}
 /* ux design */
 
 .uxDesign h3 {
@@ -199,9 +221,16 @@ section .code {
   margin-top: 3%;
   color: rgb(24, 24, 54);
 }
-section .uxDesign {
-  background-color: whitesmoke;
+@media (max-width: 765px) {
+  .uxDesign {
+    margin-top: 50%;
+  }
+  .iframe {
+    margin: 15% 0;
+    width: 100%;
+  }
 }
+
 /* contac me */
 
 input,
@@ -341,7 +370,7 @@ h6 span {
   transform: rotateY(180deg);
 }
 .center-wrap {
-  position: absolute;
+  position: fixed;
   width: fit-content;
   padding: 0 35px;
   top: 50%;
@@ -373,4 +402,49 @@ h6.options {
 .backcard-content a:hover {
   color: #4c7ecd;
   font-size: 40px;
+}
+@media (max-width: 765px) {
+  h6.options {
+    margin-top: 50%;
+  }
+  .card-3d-wrap {
+    width: 100%;
+    height: 30rem;
+  }
+  form {
+    width: 100%;
+  }
+  .backcard-content {
+    width: 100%;
+    margin: 0;
+    font-size: 1em;
+  }
+  input,
+  textarea {
+    height: 2em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  textarea {
+    height: 10rem;
+  }
+  button {
+    margin: 0;
+  }
+  .card-front,
+  .card-back {
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    width: 100%;
+  }
+  .section.pb-5.pt-5.pt-sm-2.text-center {
+    width: 100%;
+  }
+  .nav {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+  }
 }
