@@ -419,15 +419,15 @@ h6.options {
     margin: 20% 0;
   }
   .card-front {
+    display: inline-block;
     width: 100%;
-    position: bottom;
   }
   .backcard-content {
     margin: 5%;
     font-size: 1.3rem;
   }
   .card-back {
-    position: bottom;
+    display: inline-block;
     text-align: center;
     width: 100%;
     margin: 0;
@@ -448,8 +448,5 @@ h6.options {
     width: 100%;
     margin: 0;
     padding: 0;
-  }
-  .card-3d-wrap {
-    position: middle;
   }
 }
