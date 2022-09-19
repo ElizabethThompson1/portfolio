@@ -419,7 +419,7 @@ h6.options {
     margin: 20% 0;
   }
   .card-front {
-    display: inline-block;
+    display: inline;
     width: 100%;
   }
   .backcard-content {
