@@ -423,10 +423,10 @@ h6.options {
   }
   .card-front {
     width: 100%;
-    position: fixed;
+    position: bottom;
   }
   .backcard-content {
-    position: fixed;
+    position: bottom;
     width: 100%;
     font-size: 20px;
     margin: 0;
