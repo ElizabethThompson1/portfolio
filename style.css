@@ -433,7 +433,7 @@ h6.options {
     padding: 0;
   }
   form {
-    position: static;
+    position: bottom;
   }
   .space {
     margin-top: 10rem;
